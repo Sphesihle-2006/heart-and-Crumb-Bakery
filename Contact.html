@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+<link rel="stylesheet" href="Style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+</head>
+    <header class="header">
+        <div class="logo">
+        <img src="Logo.PNG" width="200" alt="heart and Crumb logo">
+        <h1>Heart and Crumb Bakery</h1>
+    </div>
+    <nav class="navigation">
+    <a href="index.html">Home</a>
+    <a href="AboutUs.html">About Us</a>
+    <a href="Products.html">Products</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact.html" class="active">Contact</a>
+    </nav>
+    </header>
+    <main>s
+    <h2>Contact Us</h2>
+    <p>The Heart and Crumb bakery would like to hear from you for any enquiries,orders<br>
+        and more information
+    </p>
+    <h3>Our Contact Details Are as Follows:</h3>
+    <p>
+       <i class="fa-solid fa-phone"></i> 
+        Phone   : 076 785 6822</p>
+    <p>
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp: 074 900 0089</p>
+   <p> 
+    <i class="fa-brands fa-facebook-f"></i>
+    acebook: Heart and Crumb Bakery</p>
+<p>
+    <i class="fa-solid fa-location-dot"></i>
+    Location: Buhlebendawo 422 franchis baard<br>
+Bronkhorspruit<br>
+1021</p>
+<i class="fa-solid fa-envelope"></i>
+    <a href="email.html">Email: heartandcrumb6@gmail.com</a>
+    <p>
+        <i class="fa-solid fa-credit-card"></i>
+         Banking details:Capitec<br>
+        076 785 622<br>
+        220764556
+    </p>
+
+ <h3>Order/Enquiry Form</h3>
+ <form>
+    <label for="name">Full Name(required):</label>
+    <input type="text" id="Name"name="name"required>
+    <br><br>
+    <label for="Email">Email(example:name@gmail.com):</label>
+        <input type="Email" id="email"name="email" required placeholder="example@gmail.com">
+        <br><br>
+    <label for ="Phone No">Phone Number(format:076 822 7856)</label>
+    <input type="tel" id="Phone No"name"Phone No" 
+    placeholder="076 822 7856" pattern="[0-9]{3} [0-9]{3}[0-9]{4}"required>
+    <br><br>
+    <h3>Select Products, Quantity, flavour</h3>
+    <!--Cake-->
+    <input type="checkbox" id="cake" name="Products" value="cake">
+    <label for "cake"> Cake</label>
+    <label for="cakequantity">Quantity</label>
+    <input type="number" id="cakequantity" name="cakequantity" min="1" value "1">
+    <label for="cakeflavour">Flavour:</label>
+    <select id="cakeflavour" name="cakeflavour"
+        <option value="CakeFlavour">Choose Flavour</option>
+        <option value="Vannilla">Vannilla</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Carrot">Carrot</option>
+        <option value="Blueberry">Blueberry </option>
+        <option value="Lemon">Lemon</option>
+        <option value="Orange"> Orange</option>
+        <option value="Red velet">Red Velvet</option>
+        <option value="strawberry">Strawberry</option>
+ </select>
+ <br><br>
+        <!--Muffins-->
+    <input type="checkbox" id="muffins" name="Products" value="muffins">
+    <label for "Muffins"> Muffin</label>
+    <label for="muffinquantity">Quantity</label>
+    <input type="number" id="muffinquantity" name="muffinquantity" min="1" value "1">
+    <label for="MuffinFlavour">Flavour:</label>
+    <select id="cakeflavour" name="--Muffins--"
+        <option value="CakeFlavour">Choose Flavour</option>
+        <option value="Vannilla">Vannilla</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Carrot">Carrot</option>
+        <option value="Blueberry">Blueberry </option>
+        <option value="Lemon">Lemon</option>
+        <option value="Orange"> Orange</option>
+        <option value="Red velet">Red Velvet</option>
+        <option value="strawberry">Strawberry</option>
+    </select>
+
+    <br><br>
+    <!--Scones-->
+    <input type="checkbox" id="scones" name="Products" value="scones">
+    <label for "scones">Scones</label>
+    <label for="scones">Quantity</label>
+    <input type="number" id="scones" name="scone" min="1" value "1">
+    <label for="SconeflavourFlavour">Flavour:</label>
+    <select id="cakeflavour" name="--Scones--"
+        <option value="CakeFlavour">Choose Flavour</option>
+        <option value="Vannilla">Vannilla</option>
+        <option value="Blueberry">Blueberry </option>
+        <option value="Lemon">Lemon</option>
+        <option value="Orange"> Orange</option>
+    </select>
+
+    <br><br>
+      <input type="checkbox" id="bread" name="Products" value="bread">
+    <label for "bread">Bread</label>
+    <label for="scones">Quantity</label>
+    <input type="number" id="bread" name="bread" min="1" value "1">
+    <label for="breadFlavour">Flavour:</label>
+    <select id="cakeflavour" name="--bread--"
+        <option value="CakeFlavour">Choose Flavour</option>
+        <option value="Vannilla">Whitebread</option>
+        <option value="Blueberry">Brown bread </option>
+        <option value="Lemon">Garlic bread</option>
+        <option value="Orange">Sourdough</option>
+    </select>
+    <br><br>
+ <input type="checkbox" id="scones" name="Products" value="Buns">
+    <label for "Buns">Buns</label>
+    <label for="scones">Quantity</label>
+    <input type="number" id="buns" name="buns" min="1" value "1">
+    <label for="BunsFlavour">Flavour:</label>
+    <select id="cakeflavour" name="--Buns--"
+        <option value="CakeFlavour">Choose Flavour</option>
+        <option value="Cinamon rolls">Cinammon rolls</option>
+        <option value="Blueberry">Plain</option>
+        <option value="Lemon">Cream Buns</option>
+        <option value="Orange"> Hotcross Buns</option>
+    </select>
+    <br><br>
+    <input type="checkbox" id="amagwinya" name="Amagwinya" value="Amagwinya">
+    <label for "Amagwinya">Amagwinya</label>
+    <label for="scones">Quantity</label>
+    <input type="number" id="buns" name="buns" min="1" value "1">
+    <label for="BunsFlavour">Flavour:</label>
+    <select id="cakeflavour" name="--Buns--"
+        <option value="CakeFlavour">Choose Flavour</option>
+        <option value="Cinamon rolls">Dougnuts</option>
+        <option value="Blueberry">Round</option>
+        <option value="Lemon">flatties</option>
+</select>
+<br><br>
+    <h3>Enquiries/Specification for order</h3>
+<label for="Message">Message:</label>
+<br><br>
+<textarea id="Message" name="Message"row "8"cols="30"></textarea>
+<br><br>
+<button type="reset" class="order-button">Reset</button>
+<button type="Submit" class="order-button">Submit</button>
+</main>
+<footer>
+    <p>&copy; 2026 Heart and Crumb Bakery. All Rights Reserved</p>
+
+ </form>
+
+<body>
+    
+</body>
+</html>
