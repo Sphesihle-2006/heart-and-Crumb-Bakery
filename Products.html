@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Heart and Crumb Bakery offers fresh homemade cakes, muffins and baked goods.">
+<meta name="keywords" content="bakery, homemade cakes, muffins, fresh baking">
+
     <title>Heart and Crumb Bakery</title>
     <link rel="stylesheet" href="Style.css">
 </head>
@@ -22,7 +25,7 @@
 </nav>
 
 <main>
-    <h2>Our Products</2>
+    <h2>Our Products</h2>
 <p> 
     At Heart & Crumb Bakery, we make fresh homemade baked goods
      using traditional recipes and quality ingredients.
@@ -38,6 +41,9 @@
     A delicious homemade moist  cake perfect for birthdays and special occasions
 </p>
 <p><strong>Price: From R250</strong></p>
+<button class="add-to-cart" data-name="Celebration Cake" data-price="250"> 
+    Add to Cart 🛒 <br>
+</button>
 <a href="Contact.html">Enquire / Order</a>
 </section>
 
@@ -50,8 +56,17 @@
  <h3>Various flavours of muffins</h3>
 <p>Soft and delicious muffins that come in any flavour that you want to indlulge in.</p>
 <p><strong>Price: R25 each</strong></p>
+<button class="add-to-cart" data-name="Muffins" data-price="25" type="button">
+    Add to Cart 🛒
+</button>
 <p><strong> Price: R250 5l</strong></p>
+<button class="add-to-cart" data-name="Muffins" data-price="250" type="button">
+    Add to Cart 🛒
+</button>
 <p><strong> Price: 450 Assorted</strong></p>
+<button class="add-to-cart" data-name="Muffins" data-price="450" type="button">
+    Add to Cart 🛒
+</button>
 <a href="Contact.html">Enquire / Order</a>
         </section>
 
@@ -63,9 +78,21 @@
             <h3>Homemade Bread</h3>
 <p>  Freshly baked traditional bread made using qualityingredients and our family recipe.</p>
 <p><strong>White bread:R15</strong></p>
+<button class="add-to-cart" data-name="White Bread" data-price="15" type="button">
+    Add White Bread to Cart 🛒
+</button>
 <p><Strong>Brown Bread:R17 </Strong></p>
+<button class="add-to-cart" data-name="Brown bread" data-price="17" type="button">
+    Add Brown Bread to Cart 🛒
+</button>
 <p><Strong>Garlic Bread:R25</Strong></p>
+<button class="add-to-cart" data-name="Garlic bread" data-price="25" type="button">
+    Add Garlic Bread to Cart 🛒
+</button>
 <p><Strong>Sourdoudgh Bread:R25</Strong></p>
+<button class="add-to-cart" data-name="Sourdoudgh Bread" data-price="25" type="button">
+    Add Sourdough Bread to Cart 🛒
+</button>
 <a href="Contact.html">Enquire / Order</a>
         </section>
 
@@ -79,9 +106,21 @@
 <h3>Scones</h3>
 <p>Soft and delicious homemade cookies made using traditional bakery recipes</p>
 <p><strong>Each:R20 per packet</strong></p>
+<button class="add-to-cart" data-name="Scones" data-price="20" type="button">
+    Add Scones to Cart 🛒
+</button>
 <p><strong>5l:R300</strong></p>
+<button class="add-to-cart" data-name="5 Litre" data-price="300" type="button">
+    Add Scones 5 Litre to Cart 🛒
+</button>
 <p><strong>10l:R450</strong></p>
+<button class="add-to-cart" data-name="10 Litre" data-price="450" type="button">
+    Add Scones 10 Litre to Cart 🛒
+</button>
 <p><strong>Assorted:R500</strong></p>
+<button class="add-to-cart" data-name="Assorted Scones" data-price="500" type="button">
+    Add Scones Assorted to Cart 🛒
+</button>
 <a href="contact.html">Enquire / Order</a>
         </section>
 
@@ -93,14 +132,44 @@
 <h3>Fresh Pastries</h3>
 <p> Freshly baked pastries that are perfect for breakfast,snacks or sharing with family and friends.</p>
     <p><strong>Amagwinya: from R2</strong></p>
+    <button class="add-to-cart" data-name="Amagwinya" data-price="2" type="button">
+    Add Amagwinya to Cart 🛒
+</button>
     <p><strong>Hotcross: from R20</strong></p>
+    <button class="add-to-cart" data-name="Hotcross" data-price="20" type="button">
+    Hot Cross to cart 🛒
+</button>
     <p><strong>Cinammon Roll: From R25</strong></p>
+    <button class="add-to-cart" data-name="Cinammon Roll" data-price="25" type="button">
+    Add Cinnamon to Cart 🛒
+</button>
     <p><strong>Creamy buns: From R25</strong></p>
+    <button class="add-to-cart" data-name="Creamy Buns" data-price="25" type="button">
+    Add Creamy buns to Cart 🛒
+</button>
 <a href="Contact.html">Enquire / Order</a>
+
+<section id="shopping-cart" class="shopping-cart"> 
+    <h2>🛒 Your Shopping Cart</h2>
+
+<p id="cart-message" role="status" aria-live="polite">
+    Your cart is empty. Add your favourite baked goods!
+</p>
+
+<div id="cart-items"></div>
+
+<h3>Total: <span id="cart-total">R0.00</span></h3>
+
+<button id="clear-cart" type="button">Clear Cart</button>
+
+<a href="Contact.html" class="checkout-button">
+    Continue to Order
+</a>
 </section>
 </main>
 <footer>
     <p>&copy; 2026 Heart and Crumb Bakery. All Rights Reserved</p>
 </footer>   
+<script src="script.js"></script>
 </body>
 </html>
