@@ -555,5 +555,96 @@ if (checkoutCartItems && checkoutCartTotal) {
     }
 
 }
+// ========================================
+// HEART AND CRUMB - GALLERY IMAGE POPUP
+// ========================================
 
-});
+(function () {
+
+    const galleryImages = document.querySelectorAll(".gallery-img");
+    const imagePopup = document.getElementById("image-popup");
+    const popupImage = document.getElementById("popup-image");
+    const closePopup = document.getElementById("close-popup");
+    const prevImage = document.getElementById("prev-image");
+    const nextImage = document.getElementById("next-image");
+
+    // Only run this code if the gallery exists
+    if (!imagePopup || !popupImage || !closePopup ||
+        !prevImage || !nextImage || galleryImages.length === 0) {
+        return;
+    }
+
+    let currentImageIndex = 0;
+
+    // Open enlarged image
+    function openGalleryImage(index) {
+        currentImageIndex = index;
+
+        popupImage.src = galleryImages[index].src;
+        popupImage.alt = galleryImages[index].alt;
+
+        imagePopup.classList.add("show");
+        document.body.style.overflow = "hidden";
+    }
+
+    // Click an image to enlarge it
+    galleryImages.forEach(function (image, index) {
+        image.addEventListener("click", function () {
+            openGalleryImage(index);
+        });
+    });
+
+    // Close popup
+    function closeGalleryPopup() {
+        imagePopup.classList.remove("show");
+        document.body.style.overflow = "";
+    }
+
+    closePopup.addEventListener("click", closeGalleryPopup);
+
+    // Next image
+    nextImage.addEventListener("click", function () {
+        currentImageIndex =
+            (currentImageIndex + 1) % galleryImages.length;
+
+        openGalleryImage(currentImageIndex);
+    });
+
+    // Previous image
+    prevImage.addEventListener("click", function () {
+        currentImageIndex =
+            (currentImageIndex - 1 + galleryImages.length) %
+            galleryImages.length;
+
+        openGalleryImage(currentImageIndex);
+    });
+
+    // Close when clicking outside the image
+    imagePopup.addEventListener("click", function (event) {
+        if (event.target === imagePopup) {
+            closeGalleryPopup();
+        }
+    });
+
+    // Keyboard controls
+    document.addEventListener("keydown", function (event) {
+        if (!imagePopup.classList.contains("show")) {
+            return;
+        }
+
+        if (event.key === "Escape") {
+            closeGalleryPopup();
+        }
+
+        if (event.key === "ArrowRight") {
+            nextImage.click();
+        }
+
+        if (event.key === "ArrowLeft") {
+            prevImage.click();
+        }
+    });
+
+})();
+    });
+
