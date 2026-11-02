@@ -211,9 +211,41 @@ ul {
 
 
 
+.add-to-cart {
+background: #b88768;
+color: white;
+border: 2px solid #b88768;
+padding: 12px 25px;
+border-radius: 25px;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
 
+/* HOVER EFFECT */
+.add-to-cart:hover {
+background: #d9a6a6;
+border-color: #d9a6a6;
+color: #ffffff;
+transform: translateY(-3px);
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
 
+/* WHEN BUTTON IS CLICKED */
+.add-to-cart:active {
+transform: scale(0.96);
+}
 
+/* MOBILE FRIENDLY */
+@media screen and (max-width: 600px) {
+.add-to-cart {
+padding: 10px 20px;
+font-size: 14px;
+width: 100%;
+}
+}
 
 
 
@@ -286,4 +318,386 @@ ul {
         font-size: 15px;
     }
 
+}
+
+/* =====================================
+   CONTACT PAGE DESIGN ONLY
+   ===================================== */
+
+body.contact-page main {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 235px 25px 50px;
+}
+
+/* Contact heading */
+
+body.contact-page .contact-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body.contact-page .contact-heading h2 {
+    color: #754638;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+body.contact-page .contact-heading p {
+    font-size: 17px;
+    color: #4d3930;
+}
+
+/* Two-column layout */
+
+body.contact-page .contact-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.4fr;
+    gap: 30px;
+    align-items: start;
+}
+
+/* Contact details and form cards */
+
+body.contact-page .contact-details,
+body.contact-page .order-form-section {
+    background: rgba(255, 249, 243, 0.97);
+    padding: 28px;
+    border: 2px solid #d98c9b;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(80, 40, 30, 0.12);
+}
+
+/* Contact details */
+
+body.contact-page .contact-details h3 {
+    background: #d7be9d;
+    color: #593b2c;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+body.contact-page .contact-details > p {
+    margin-bottom: 20px;
+}
+
+body.contact-page .contact-info p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+    overflow-wrap: anywhere;
+}
+
+body.contact-page .contact-info i {
+    color: #c45d78;
+    font-size: 19px;
+    min-width: 22px;
+    margin-top: 4px;
+}
+
+body.contact-page .contact-info a {
+    color: #85485a;
+    text-decoration: none;
+}
+
+body.contact-page .contact-info a:hover {
+    text-decoration: underline;
+}
+
+body.contact-page .contact-note {
+    text-align: center;
+    background: #f8e5e6;
+    border-radius: 12px;
+    padding: 18px;
+    margin-top: 30px;
+    color: #85485a;
+}
+
+body.contact-page .contact-note i {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+/* Order form heading */
+
+body.contact-page .order-form-section h2 {
+    color: #754638;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+body.contact-page .form-intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Fieldsets */
+
+body.contact-page fieldset {
+    border: 1px solid #d9a6a6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 22px;
+    background: #fffdfb;
+}
+
+body.contact-page legend {
+    color: #b65e72;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 17px;
+}
+
+/* Form labels */
+
+body.contact-page .order-form-section form > fieldset > label {
+    display: block;
+    font-weight: bold;
+    color: #593b2c;
+    margin: 15px 0 6px;
+}
+
+/* Text fields, dropdowns and message box */
+
+body.contact-page input:not([type="checkbox"]),
+body.contact-page select,
+body.contact-page textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #c9a58d;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background: white;
+}
+
+body.contact-page textarea {
+    resize: vertical;
+}
+
+body.contact-page input:focus,
+body.contact-page select:focus,
+body.contact-page textarea:focus {
+    outline: none;
+    border: 2px solid #d96f89;
+    box-shadow: 0 0 5px rgba(217, 111, 137, 0.3);
+}
+
+/* Product selection cards */
+
+body.contact-page .field-instruction {
+    margin-bottom: 15px;
+}
+
+body.contact-page .product-option {
+    background: #fff7f3;
+    border: 1px solid #ead2c7;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 15px 0;
+}
+
+body.contact-page .product-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+body.contact-page .product-title input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #c45d78;
+    cursor: pointer;
+}
+
+body.contact-page .product-title label {
+    font-weight: bold;
+    font-size: 17px;
+    color: #754638;
+    cursor: pointer;
+}
+
+body.contact-page .product-option > label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #593b2c;
+}
+
+/* Form feedback */
+
+body.contact-page #form-feedback {
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Buttons */
+
+body.contact-page .form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+body.contact-page .form-buttons button {
+    flex: 1;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+/* Order summary */
+
+body.contact-page .order-summary {
+    background: #f8e8e5;
+    border: 1px solid #d9a6a6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+body.contact-page .order-summary h3 {
+    color: #754638;
+    margin-bottom: 15px;
+}
+
+body.contact-page .order-summary p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Mobile design */
+
+@media screen and (max-width: 768px) {
+
+    body.contact-page main {
+        padding: 260px 15px 30px;
+    }
+
+    body.contact-page .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    body.contact-page .contact-details,
+    body.contact-page .order-form-section {
+        padding: 18px;
+    }
+
+    body.contact-page .form-buttons {
+        flex-direction: column;
+    }
+
+    body.contact-page .form-buttons button {
+        width: 100%;
+    }
+
+}
+
+```css
+/* ===== SHOPPING CART ITEM DESIGN ===== */
+
+#shopping-cart .cart-item {
+    background: #ffffff;
+    border: 1px solid #ead6d0;
+    border-radius: 14px;
+    padding: 18px;
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    box-shadow: 0 3px 8px rgba(80, 45, 35, 0.08);
+}
+
+/* Quantity controls */
+#shopping-cart .cart-item button {
+    min-width: 38px;
+    min-height: 38px;
+    border: none;
+    border-radius: 9px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 3px;
+    transition: 0.2s ease;
+}
+
+/* Plus and minus buttons */
+#shopping-cart .cart-item button:not(.remove-item) {
+    background-color: #f4dce2;
+    color: #8e4057;
+}
+
+#shopping-cart .cart-item button:not(.remove-item):hover {
+    background-color: #e9bdca;
+    transform: scale(1.08);
+}
+
+/* Quantity number */
+#shopping-cart .cart-item input[type="number"] {
+    width: 55px;
+    height: 36px;
+    border: 1px solid #d8a5b2;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+/* Remove button */
+#shopping-cart .cart-item .remove-item {
+    background-color: #a95763;
+    color: white;
+    padding: 9px 16px;
+    font-size: 13px;
+}
+
+#shopping-cart .cart-item .remove-item:hover {
+    background-color: #843e49;
+    transform: translateY(-2px);
+}
+
+/* Add to cart button */
+.add-to-cart {
+    background-color: #b98768;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #95664c;
+}
+
+/* Clear cart button */
+#clear-cart {
+    background-color: #754638;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#clear-cart:hover {
+    background-color: #593326;
+}
+
+/* Keyboard focus */
+#shopping-cart button:focus-visible {
+    outline: 3px solid #d97891;
+    outline-offset: 3px;
 }
